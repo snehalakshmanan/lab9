@@ -12,9 +12,12 @@ function initializePage() {
 
 // Function that is called when the server responds to the AJAX call
 function onServerResponse(data){
+    console.log(data.id);
     var labElementId = getLabElementId(data.id);
+    console.log(labElementId);
     var labElement = $(labElementId);
-    labElement.css({'background': 'yellow'});
+    console.log(labElement);
+    labElement.css("background", "yellow");
 }
 
 
